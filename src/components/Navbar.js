@@ -3,7 +3,8 @@ import {Link} from 'gatsby'
 import github from '../img/github-icon.svg'
 import instagram from '../img/social/instagram2.svg'
 import gmail from '../img/social/gmail-2.svg'
-import logo from '../img/logo.svg'
+import logo from '../img/paigelog2.png'
+// import logo from '../img/paigelog_logo.svg'
 
 const Navbar = class extends React.Component {
     constructor(props) {
@@ -30,21 +31,31 @@ const Navbar = class extends React.Component {
 
     render() {
         return (
-            <div style={{backgroundColor:'#fff'}}>
-
-                <nav  style={{backgroundColor:'##ACCAB9', paddingBottom:'20px'}}
+            <div style={{backgroundColor:'#fcf9ae'}}>
+                <nav  style={{backgroundColor:'#0c0c13', paddingBottom:'20px'}}
                     className="navbar is-transparent"
                     role="navigation"
                     aria-label="main-navigation">
-                    <div className="container">
                         <div className="navbar-brand">
                             <Link to="/" className="navbar-item" title="Logo">
                                 <img
                                     src={logo}
-                                    alt="Logo"
+                                    className="Logo"
+                                    // width='200px' 
+                                    // height='auto' 
+                                    // resize='both'
                                     style={{
                                         marginTop:'30px',
-                                        width: '1300px'
+                                        marginLeft:'700px',
+                                        display: 'block',
+                                        // width: '150px',
+                                        height:'auto'
+                                        // margin : '0px auto'
+                                        // alignItems:'center',
+                                        // resize:'both',
+                                        // float:'center',
+                                        // width:'150px',
+                                        // height:'auto',
                                     }}/>
                             </Link>
                             {/* Hamburger menu */}
@@ -53,7 +64,6 @@ const Navbar = class extends React.Component {
                                 data-target="navMenu"
                                 onClick={() => this.toggleHamburger()}></div>
                         </div>
-                    </div>
                     </nav>
                     <nav>
                     <div id="navMenu" className={`navbar-menu ${this.state.navBarActiveClass}`}

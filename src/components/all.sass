@@ -23,22 +23,14 @@ $black: #0c0c13
   height: wrap-content
   margin-left: 100px
 
-.categoryBar
-  width : 130px
-  position: fixed
-  z-index: 1
-  top: 200px
-  left: 50px
-  height: 100%
-  overflow-x: hidden
+
 
 .row 
   content : ""
   display: table
   clear : both
 
-.posts
-  margin-left : 150px
+
 
 .nav 
   text-align:center
@@ -52,6 +44,7 @@ $black: #0c0c13
 
 .menu-text 
   color: #181B26
+  // color: #0045ff
   font-weight : bold
   font-family: "Helvetica Neue", Helvetica, sans-serif
   font-size : 18px
@@ -117,6 +110,14 @@ $black: #0c0c13
 
 .navbar-item .icon
   color: $primary
+  // height: '100px'
+
+// .Logo
+//   margin : 50px
+//   width: 200px
+//   height: 100px
+
+
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
@@ -124,6 +125,14 @@ $black: #0c0c13
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+  // width : 500px
+  // height: 300px
+  // position: absolute
+  // left: 50%
+  // overflow: hidden
+  text-align: center
+  // margin : 10px
+
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
@@ -165,6 +174,40 @@ $menu-label-color: $black
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
+
+// blog categories
+.categoryBar
+  // width : 150px
+  // position: fixed
+  // z-index: 1
+  // top: 200px
+  // left: 50px
+  height: 100%
+  // overflow-x: hidden
+  float: left
+  width : 17%
+  padding: 40px
+  // background-color: #fcf9ae
+
+.posts
+  // margin-left : 150px
+  float: left
+  width : 70%
+  height : wrap-content
+  padding: 50px
+
+.cat_1
+  margin-top: 10px
+
+.cat_1 a
+  font-size: 18px
+  font-weight: bold
+  // font-family: Arial
+  color: $black
+
+.cat_2 a
+  font-size: 14px
+  margin-left: 10px
 
 @import "~bulma"
 

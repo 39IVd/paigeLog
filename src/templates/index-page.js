@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import {Link, graphql} from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import sampleImg from '../../static/img/bg3.jpg'
 
 export const IndexPageTemplate = ({
     image,
@@ -20,6 +20,7 @@ export const IndexPageTemplate = ({
             className="full-width-image margin-top-0"
             style={{
                 backgroundImage: `url(${
+                  // sampleImg}
                 !!image.childImageSharp
                     ? image.childImageSharp.fluid.src
                     : image})`,
@@ -47,6 +48,16 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-3">
                         Tags
                     </h3>
+                    <ul className="taglist">
+                      {/* {group.map(tag => (
+                        <li key={tag.fieldValue}>
+                          <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                            {tag.fieldValue} ({tag.totalCount})
+                          </Link>
+                        </li>
+                      ))} */}
+                    </ul>
+
                 </div>
                
             </div>
