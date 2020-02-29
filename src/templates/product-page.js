@@ -32,7 +32,7 @@ export const ProductPageTemplate = ({
         style={{
           boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
           backgroundColor: '#f40',
-          color: 'white',
+          color: '#0c0c13',
           padding: '1rem',
         }}
       >

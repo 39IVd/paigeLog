@@ -38,7 +38,7 @@ about: Create a report to help us improve
 
 
 <!-- "It should work" is not a helpful explanation -->
-<!-- Explain exactly how it should behave -->
+<!-- Explain exactly how  should behave -->
 
 **Other relevant information:**
 
